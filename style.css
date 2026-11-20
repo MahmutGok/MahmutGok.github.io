@@ -164,6 +164,117 @@ body {
   text-decoration: underline;
 }
 
+/* Week 3 Section */
+.section-intro {
+  margin-bottom: 20px;
+}
+
+.week3-block {
+  margin-top: 24px;
+}
+
+.week3-block h3 {
+  font-size: 1.05rem;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.muted-small {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 12px;
+}
+
+.muted-small a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.muted-small a:hover {
+  text-decoration: underline;
+}
+
+.table-wrap {
+  width: 100%;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  background-color: var(--surface);
+}
+
+.bench-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+  min-width: 480px;
+}
+
+.bench-table th,
+.bench-table td {
+  text-align: left;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.bench-table th {
+  color: #ffffff;
+  background-color: rgba(15, 23, 42, 0.55);
+  font-weight: 600;
+}
+
+.bench-table tr:last-child td {
+  border-bottom: none;
+}
+
+.media-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+.media-card {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.media-card img,
+.media-card video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.media-card figcaption {
+  padding: 12px;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.media-card figcaption strong {
+  color: #ffffff;
+}
+
+.project-grid.two-col {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card.compact h4 {
+  color: #ffffff;
+  font-size: 1rem;
+  margin-bottom: 6px;
+}
+
+.card.compact code {
+  background-color: var(--bg);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.82rem;
+}
+
 /* Skills */
 .skills-list {
   list-style: none;

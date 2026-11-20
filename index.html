@@ -111,6 +111,78 @@
       </div>
     </section>
 
+    <section id="week3" class="section">
+      <h2>Week 3 — Benchmarks &amp; Research</h2>
+      <p class="section-intro">
+        Open-source review, LLM benchmark analysis, and cross-model prompt evaluation outputs.
+      </p>
+
+      <div class="week3-block">
+        <h3>Prompt Benchmark (Task 3)</h3>
+        <p class="muted-small">
+          Reference benchmark: <a href="https://github.com/gorkemergune/mihenk-benchmark" target="_blank" rel="noopener noreferrer">MIHENK (quiz_public_tr.md — 10 items)</a> ·
+          Text models evaluated under identical prompt &amp; formatting constraints.
+        </p>
+        <div class="table-wrap">
+          <table class="bench-table">
+            <thead>
+              <tr>
+                <th>Model</th>
+                <th>Accuracy</th>
+                <th>Time</th>
+                <th>Format Compliance</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Model 1 (Pending)</td>
+                <td>— / 10</td>
+                <td>—</td>
+                <td>—</td>
+                <td>Awaiting live test run</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="week3-block">
+        <h3>Multimodal Image &amp; Video Benchmark (16:9)</h3>
+        <p class="muted-small">
+          Fixed prompt: <em>"A first-year computer engineering student studying late at night at a minimalist wooden desk, laptop showing code, glowing digital Pomodoro timer reading '25:00', warm amber desk lamp, rain on dark window, cinematic realism, 16:9."</em>
+        </p>
+        <div class="media-grid">
+          <figure class="media-card">
+            <img src="assets/week3/img-google-nano-banana.jpg" alt="Google Imagen / Nano Banana 16:9 study desk output">
+            <figcaption>
+              <strong>Photo 1 · Google Imagen / Nano Banana</strong> — Strong prompt adherence; "25:00" timer text, warm lighting, and code screen rendered clearly.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="week3-block">
+        <h3>Dataset Reviews (Task 7 · Hugging Face)</h3>
+        <div class="project-grid two-col">
+          <article class="card compact">
+            <h4>TurkishMMLU</h4>
+            <p>
+              Turkish high-school curriculum QA (9 subjects, 10k+ full / 1,845 HF test rows). Exact-match accuracy; GPT-4o 83.1% (5-shot), Social Sciences near saturation (95.3%).
+            </p>
+            <a href="https://huggingface.co/datasets/AYueksel/TurkishMMLU" target="_blank" rel="noopener noreferrer">View on Hugging Face →</a>
+          </article>
+          <article class="card compact">
+            <h4>GSM8K</h4>
+            <p>
+              8,792 English grade-school math problems (7,473 train / 1,319 test). Regex exact match after <code>####</code>. Saturated at 95–99% with known contamination (drops on GSM1k).
+            </p>
+            <a href="https://huggingface.co/datasets/openai/gsm8k" target="_blank" rel="noopener noreferrer">View on Hugging Face →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
     <section id="skills" class="section">
       <h2>Skills &amp; Learning</h2>
       <ul class="skills-list">
