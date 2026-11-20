@@ -14,6 +14,7 @@
       <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#week3">Week 3</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -34,7 +35,11 @@
       <p>
         I started studying Computer Engineering to understand how software systems work under the hood,
         not just how to write syntax. Right now, I am focusing on programming fundamentals,
-        Git workflows, and building clean, working projects from scratch.
+        Git workflows, evaluating LLM benchmarks, and building clean, working projects from scratch.
+      </p>
+      <p class="about-note">
+        During the Nexa Fellowship, I built and shipped my first standalone web application (StudySprint),
+        audited open-source desktop software (Nashi), and compared text/multimodal AI models using reproducible prompts.
       </p>
     </section>
 
@@ -44,24 +49,64 @@
         <article class="card">
           <h3>StudySprint — Pomodoro &amp; Task Timer</h3>
           <p>
-            A focused web app with preset/custom timers, input validation, and browser-persisted session tasks.
+            A focused study timer with preset/custom durations (1–180 min), strict input validation,
+            browser-persisted session tasks, light/dark theme toggle, and keyboard shortcuts (Space / R).
           </p>
-          <a href="https://study-sprint-tan.vercel.app" target="_blank" rel="noopener noreferrer" style="margin-right: 16px;">
-            Live Demo →
-          </a>
-          <a href="https://github.com/MahmutGok/study-sprint" target="_blank" rel="noopener noreferrer">
-            View on GitHub →
-          </a>
+          <div class="tag-row">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>Vanilla JS</span>
+            <span>localStorage</span>
+            <span>Web Audio API</span>
+          </div>
+          <div class="card-links">
+            <a href="https://study-sprint-tan.vercel.app" target="_blank" rel="noopener noreferrer">
+              Live Demo →
+            </a>
+            <a href="https://github.com/MahmutGok/study-sprint" target="_blank" rel="noopener noreferrer">
+              View on GitHub →
+            </a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Nashi App — Open-Source Fork &amp; Review</h3>
+          <p>
+            Tested and reviewed Orkun Işıtmak's open-source offline file toolkit (Windows x64 .NET 10 / WPF),
+            analyzing its AI-assisted PR workflow, regression test practices, and release packaging.
+          </p>
+          <div class="tag-row">
+            <span>Open Source</span>
+            <span>Windows x64</span>
+            <span>Code Review</span>
+            <span>Git Fork</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/orkunisitmak/nashi-app" target="_blank" rel="noopener noreferrer">
+              Upstream Repo →
+            </a>
+            <a href="https://github.com/MahmutGok/nexa-fellowship-tasks" target="_blank" rel="noopener noreferrer">
+              Analysis Notes →
+            </a>
+          </div>
         </article>
 
         <article class="card">
           <h3>Nexa Fellowship Tasks</h3>
           <p>
-            My weekly fellowship notes, Git workflow exercises, and open-source profile reviews.
+            Weekly engineering notes covering Git workflows, open-source reviews, LLM evaluation design,
+            TurkishMMLU &amp; GSM8K benchmark analyses, and game mechanics teardown (1in8b.life).
           </p>
-          <a href="https://github.com/MahmutGok/nexa-fellowship-tasks" target="_blank" rel="noopener noreferrer">
-            View on GitHub →
-          </a>
+          <div class="tag-row">
+            <span>Git</span>
+            <span>LLM Evals</span>
+            <span>Documentation</span>
+          </div>
+          <div class="card-links">
+            <a href="https://github.com/MahmutGok/nexa-fellowship-tasks" target="_blank" rel="noopener noreferrer">
+              View on GitHub →
+            </a>
+          </div>
         </article>
       </div>
     </section>
@@ -84,6 +129,7 @@
       <div class="contact-links">
         <a href="https://github.com/MahmutGok" target="_blank" rel="noopener noreferrer">GitHub</a>
         <a href="https://www.linkedin.com/in/mahmut-gok" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://huggingface.co/MahmutGok" target="_blank" rel="noopener noreferrer">Hugging Face</a>
         <a href="mailto:gokmahmut11@gmail.com">Email</a>
       </div>
     </section>

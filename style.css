@@ -97,9 +97,35 @@ body {
   color: var(--muted);
 }
 
+.about-note {
+  margin-top: 10px;
+}
+
 /* Project Card */
 .project-grid {
   display: grid;
+  gap: 16px;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tag-row span {
+  background-color: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--muted);
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-size: 0.78rem;
+}
+
+.card-links {
+  display: flex;
+  flex-wrap: wrap;
   gap: 16px;
 }
 
