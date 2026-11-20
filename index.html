@@ -140,14 +140,35 @@
                 <td>8/10 strict (10/10 semantic)</td>
                 <td>4.86s</td>
                 <td>Full</td>
-                <td>Followed format strictly; answered Q2 ("hypothesis") and Q4 ("mitochondria") in English despite Turkish prompt.</td>
+                <td>Free · Strict format followed; answered Q2 ("hypothesis") &amp; Q4 ("mitochondria") in English despite Turkish prompt.</td>
               </tr>
               <tr>
-                <td>Models 2–5</td>
-                <td>In progress</td>
-                <td>—</td>
-                <td>—</td>
-                <td>Remaining 4 models to be added after browser runs.</td>
+                <td>Gemini Flash-Lite</td>
+                <td>10/10</td>
+                <td>~3s</td>
+                <td>Full</td>
+                <td>Fastest fully accurate Turkish response; zero extra commentary.</td>
+              </tr>
+              <tr>
+                <td>Gemini Flash</td>
+                <td>10/10</td>
+                <td>~8s</td>
+                <td>Full</td>
+                <td>10/10 exact Turkish answers; strictly respected short-answer constraint.</td>
+              </tr>
+              <tr>
+                <td>Gemini Pro</td>
+                <td>10/10</td>
+                <td>~44s</td>
+                <td>Full</td>
+                <td>10/10 exact Turkish answers; highest latency overhead on straightforward L1–L2 items.</td>
+              </tr>
+              <tr>
+                <td>Gemini 4 Neon (Reasoning)</td>
+                <td>10/10</td>
+                <td>~72s</td>
+                <td>Full</td>
+                <td>10/10 exact Turkish answers; deepest reasoning added 24x latency over Flash-Lite without extra gain on short L1–L2 items.</td>
               </tr>
             </tbody>
           </table>
@@ -163,16 +184,44 @@
           <figure class="media-card">
             <img src="assets/week3/img-google-nano-banana.jpg" alt="Google Imagen / Nano Banana 16:9 study desk output">
             <figcaption>
-              <strong>Photo 1 · Google Imagen / Nano Banana (Best so far)</strong> — Strong prompt adherence: crisp "25:00" digital timer, clean code on laptop, warm lamp, rain on dark window, natural hands and anatomy.
+              <strong>Photo 1 · Google Imagen / Nano Banana (Best · 5/5)</strong> — Crisp "25:00" digital timer, readable code on laptop, warm amber lamp, dark rainy window, natural hands and anatomy.
+            </figcaption>
+          </figure>
+          <figure class="media-card">
+            <img src="assets/week3/img-flux-schnell.webp" alt="Black Forest Labs FLUX.1-schnell 16:9 study desk output">
+            <figcaption>
+              <strong>Photo 2 · FLUX.1-schnell (5.51s · 4/5)</strong> — Cinematic lighting, real code on laptop, rainy night window, clean hands; however, it completely omitted the "25:00" Pomodoro timer.
+            </figcaption>
+          </figure>
+          <figure class="media-card">
+            <img src="assets/week3/img-sd35-turbo.webp" alt="Stability AI SD 3.5 Large Turbo 16:9 study desk output">
+            <figcaption>
+              <strong>Photo 3 · Stable Diffusion 3.5 Large Turbo (5.34s · 3/5)</strong> — Warm lamp and laptop present, but the timer text garbled into "6:0" instead of "25:00" and the screen faces away.
             </figcaption>
           </figure>
           <figure class="media-card">
             <img src="assets/week3/img-nvidia-sana.jpg" alt="NVIDIA SANA 16:9 study desk output">
             <figcaption>
-              <strong>Photo 2 · NVIDIA SANA (4.07s · Weakest so far)</strong> — Fast and free, but missed key constraints: blurry render, no laptop/code, no "25:00" timer, daylight window instead of night rain, minor hand artifact.
+              <strong>Photo 4 · NVIDIA SANA (4.07s · Weakest · 1.5/5)</strong> — Fast and free, but blurry render, no laptop/code, no "25:00" timer, daylight window instead of night rain, minor hand distortion.
             </figcaption>
           </figure>
         </div>
+
+        <h4 class="sub-heading">Video Outputs (16:9 · 3s)</h4>
+        <div class="media-grid">
+          <figure class="media-card">
+            <video controls muted playsinline preload="metadata">
+              <source src="assets/week3/vid-ltx-video.mp4" type="video/mp4">
+              Your browser does not support HTML5 video.
+            </video>
+            <figcaption>
+              <strong>Video 1 · Lightricks LTX-Video Distilled (10s render · 2/5)</strong> — Rendered wooden desk, warm lamp, and laptop, but omitted the student, garbled screen text ("2:0" instead of "25:00"), and produced minimal motion.
+            </figcaption>
+          </figure>
+        </div>
+        <p class="bench-commentary">
+          <strong>Key Takeaway:</strong> On 10 Turkish MIHENK L1–L2 items, every model understood the questions semantically, yet exact-match Turkish evaluation caught a real regression in GPT-OSS 20B (answering Q2 and Q4 in English), while smaller Gemini Flash-Lite matched larger models in 3 seconds. On image generation, prompt adherence diverged sharply on text rendering ("25:00"): only Google Imagen rendered the exact digits, FLUX.1-schnell nailed atmosphere but skipped the timer, SD 3.5 garbled it to "6:0", and NVIDIA SANA lost both laptop and timer. On fast open text-to-video (LTX-Video Distilled), text fidelity and scene motion remained noticeably behind image models.
+        </p>
       </div>
 
       <div class="week3-block">
